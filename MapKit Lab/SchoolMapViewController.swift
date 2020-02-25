@@ -30,6 +30,7 @@ class SchoolMapViewController: UIViewController {
         userTrackingButton = MKUserTrackingButton(frame: CGRect(x: 370, y: 30, width: 40, height: 40))
         mapView.addSubview(userTrackingButton)
         userTrackingButton.mapView = mapView
+        mapView.delegate = self
         
         SchoolAPIClient.getSchools { (result) in
             switch result{
@@ -45,6 +46,8 @@ class SchoolMapViewController: UIViewController {
     private func loadMap(){
         let annotations = makeAnnotations()
         mapView.addAnnotations(annotations)
+        let coordinates = CLLocationCoordinate2DMake(40.7128, -74.0060)
+        mapView.setRegion(MKCoordinateRegion(center: coordinates, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)), animated: true)
     }
     
     private func makeAnnotations() -> [MKPointAnnotation]{
@@ -60,18 +63,10 @@ class SchoolMapViewController: UIViewController {
         return annotations
         
     }
-}
     
+}
     extension SchoolMapViewController: MKMapViewDelegate{
-        
-//        func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-//            guard let annotation = view.annotation else { return }
-//            guard let location = (Location.getLocations().filter {$0.title == annotation.title}).first else {return}
-//            //        transitition is nice but needs a dismiss button to get back, no bueno.
-//            //        detailVC.modalPresentationStyle = .currentContext
-//            //        detailVC.modalTransitionStyle = .crossDissolve
-//        }
-        
+                
         
         func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
             guard annotation is MKPointAnnotation else { return nil }
