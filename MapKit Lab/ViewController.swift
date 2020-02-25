@@ -7,12 +7,23 @@
 //
 
 import UIKit
+import MapKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var mapView: MKMapView!
+    
+    private var userTrackingButton: MKUserTrackingButton!
+    
+    private var annotations = [MKPointAnnotation]()
+    
+    private let locationSession = CoreLocationSession()
+    
+    private var isShowingNewAnnotations = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+ 
     }
 
 

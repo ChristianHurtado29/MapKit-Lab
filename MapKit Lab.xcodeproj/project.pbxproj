@@ -13,6 +13,8 @@
 		13F57AFD2404E38B00012B1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F57AFB2404E38B00012B1D /* Main.storyboard */; };
 		13F57AFF2404E38E00012B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13F57AFE2404E38E00012B1D /* Assets.xcassets */; };
 		13F57B022404E38E00012B1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F57B002404E38E00012B1D /* LaunchScreen.storyboard */; };
+		13F57B0A2404E58C00012B1D /* CoreLocationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F57B092404E58C00012B1D /* CoreLocationSession.swift */; };
+		13F57B0C2404E95600012B1D /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F57B0B2404E95600012B1D /* School.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		13F57AFE2404E38E00012B1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13F57B012404E38E00012B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13F57B032404E38E00012B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13F57B092404E58C00012B1D /* CoreLocationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationSession.swift; sourceTree = "<group>"; };
+		13F57B0B2404E95600012B1D /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				13F57AF52404E38B00012B1D /* AppDelegate.swift */,
 				13F57AF72404E38B00012B1D /* SceneDelegate.swift */,
+				13F57B092404E58C00012B1D /* CoreLocationSession.swift */,
+				13F57B0B2404E95600012B1D /* School.swift */,
 				13F57AF92404E38B00012B1D /* ViewController.swift */,
 				13F57AFB2404E38B00012B1D /* Main.storyboard */,
 				13F57AFE2404E38E00012B1D /* Assets.xcassets */,
@@ -140,6 +146,8 @@
 			files = (
 				13F57AFA2404E38B00012B1D /* ViewController.swift in Sources */,
 				13F57AF62404E38B00012B1D /* AppDelegate.swift in Sources */,
+				13F57B0A2404E58C00012B1D /* CoreLocationSession.swift in Sources */,
+				13F57B0C2404E95600012B1D /* School.swift in Sources */,
 				13F57AF82404E38B00012B1D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
