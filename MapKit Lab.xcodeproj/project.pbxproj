@@ -3,31 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		13F57AF62404E38B00012B1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F57AF52404E38B00012B1D /* AppDelegate.swift */; };
 		13F57AF82404E38B00012B1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F57AF72404E38B00012B1D /* SceneDelegate.swift */; };
-		13F57AFA2404E38B00012B1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F57AF92404E38B00012B1D /* ViewController.swift */; };
+		13F57AFA2404E38B00012B1D /* SchoolMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F57AF92404E38B00012B1D /* SchoolMapViewController.swift */; };
 		13F57AFD2404E38B00012B1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F57AFB2404E38B00012B1D /* Main.storyboard */; };
 		13F57AFF2404E38E00012B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13F57AFE2404E38E00012B1D /* Assets.xcassets */; };
 		13F57B022404E38E00012B1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F57B002404E38E00012B1D /* LaunchScreen.storyboard */; };
 		13F57B0A2404E58C00012B1D /* CoreLocationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F57B092404E58C00012B1D /* CoreLocationSession.swift */; };
 		13F57B0C2404E95600012B1D /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F57B0B2404E95600012B1D /* School.swift */; };
+		13F57B102405CB2200012B1D /* SchoolAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F57B0F2405CB2200012B1D /* SchoolAPIClient.swift */; };
+		13F57B132405CB9F00012B1D /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 13F57B122405CB9F00012B1D /* ImageKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13F57AF22404E38B00012B1D /* MapKit Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MapKit Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F57AF52404E38B00012B1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13F57AF72404E38B00012B1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		13F57AF92404E38B00012B1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		13F57AF92404E38B00012B1D /* SchoolMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolMapViewController.swift; sourceTree = "<group>"; };
 		13F57AFC2404E38B00012B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13F57AFE2404E38E00012B1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13F57B012404E38E00012B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13F57B032404E38E00012B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13F57B092404E58C00012B1D /* CoreLocationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationSession.swift; sourceTree = "<group>"; };
 		13F57B0B2404E95600012B1D /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		13F57B0F2405CB2200012B1D /* SchoolAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13F57B132405CB9F00012B1D /* ImageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,9 +66,10 @@
 			children = (
 				13F57AF52404E38B00012B1D /* AppDelegate.swift */,
 				13F57AF72404E38B00012B1D /* SceneDelegate.swift */,
+				13F57B0F2405CB2200012B1D /* SchoolAPIClient.swift */,
 				13F57B092404E58C00012B1D /* CoreLocationSession.swift */,
 				13F57B0B2404E95600012B1D /* School.swift */,
-				13F57AF92404E38B00012B1D /* ViewController.swift */,
+				13F57AF92404E38B00012B1D /* SchoolMapViewController.swift */,
 				13F57AFB2404E38B00012B1D /* Main.storyboard */,
 				13F57AFE2404E38E00012B1D /* Assets.xcassets */,
 				13F57B002404E38E00012B1D /* LaunchScreen.storyboard */,
@@ -89,6 +94,9 @@
 			dependencies = (
 			);
 			name = "MapKit Lab";
+			packageProductDependencies = (
+				13F57B122405CB9F00012B1D /* ImageKit */,
+			);
 			productName = "MapKit Lab";
 			productReference = 13F57AF22404E38B00012B1D /* MapKit Lab.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 13F57AE92404E38B00012B1D;
+			packageReferences = (
+				13F57B112405CB9F00012B1D /* XCRemoteSwiftPackageReference "ImageKit" */,
+			);
 			productRefGroup = 13F57AF32404E38B00012B1D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,7 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13F57AFA2404E38B00012B1D /* ViewController.swift in Sources */,
+				13F57AFA2404E38B00012B1D /* SchoolMapViewController.swift in Sources */,
+				13F57B102405CB2200012B1D /* SchoolAPIClient.swift in Sources */,
 				13F57AF62404E38B00012B1D /* AppDelegate.swift in Sources */,
 				13F57B0A2404E58C00012B1D /* CoreLocationSession.swift in Sources */,
 				13F57B0C2404E95600012B1D /* School.swift in Sources */,
@@ -346,6 +358,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		13F57B112405CB9F00012B1D /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/ImageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		13F57B122405CB9F00012B1D /* ImageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13F57B112405CB9F00012B1D /* XCRemoteSwiftPackageReference "ImageKit" */;
+			productName = ImageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 13F57AEA2404E38B00012B1D /* Project object */;
 }

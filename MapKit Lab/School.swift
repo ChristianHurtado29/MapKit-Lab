@@ -14,6 +14,11 @@ struct School: Codable {
     let latitude: String
     let longitude: String
     
-    
+    enum CodingKeys: String, CodingKey {
+        case schoolName = "school_name"
+        case city
+        case latitude
+        case longitude
+    }
     
 }
